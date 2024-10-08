@@ -19,7 +19,7 @@ export default function LikesSection() {
       </div>
       <div style={{ maxWidth: 700 }}>
         <p style={{ fontSize: '2.75rem', margin: 0 }}>
-          We admit it: We’re addicted to performance marketing. All of it. We created The Fellas so we could use every bit of our collective experience, every day, to win as often as possible. We love winning — don’t you?
+          We admit it: We’re addicted to performance marketing. All of it. We created The Prod so we could use every bit of our collective experience, every day, to win as often as possible. We love winning — don’t you?
         </p>
       </div>
       </div>
