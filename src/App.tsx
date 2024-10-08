@@ -4,14 +4,14 @@ import Navbar from './comp/Navbar';
 import Main from './comp/About/Main';
 import MainContact from './comp/Contact/MainContact';
 import './App.css';
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import FooterComp from './comp/FooterComp';
 import NumberPage from './comp/NumberPage';
 
 const App = () => {
   const [isBorderActive, setIsBorderActive] = useState<boolean>(false);
-
+  const navigate = useNavigate();
   useEffect(() => {
     if (isBorderActive) {
       setTimeout(() => {
@@ -19,9 +19,11 @@ const App = () => {
       }, 1000);
     }
   }, [isBorderActive]);
-
+  useEffect(() => {
+    // Перенаправлення на /contact
+    navigate('/');
+  }, [navigate]);
   return (
-    <Router>
     <div
       className="border-wrapper"
       style={{
@@ -29,30 +31,21 @@ const App = () => {
         transition: 'border 0.5s ease-in-out',
       }}
     >
-      
       <div
         style={{
           opacity: isBorderActive ? 0 : 1,
           transition: 'opacity 0.5s ease-in-out',
         }}
       >
-        
         <Routes>
           <Route path='/' element={<Main />} />
-
           <Route path='/contact' element={<MainContact />} />
-
         </Routes>
-    
-
-
       </div>
       <Navbar setIsBorderActive={setIsBorderActive} />
-      <NumberPage/>
+      <NumberPage />
     </div>
-    </Router>
   );
 };
-
 
 export default App;
