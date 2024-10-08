@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react_wcprod/static/css/main.535cc3c6.css",
+    "main.js": "/react_wcprod/static/js/main.30b0ee8d.js",
+    "static/js/453.75553bbc.chunk.js": "/react_wcprod/static/js/453.75553bbc.chunk.js",
+    "static/media/VZvx.gif": "/react_wcprod/static/media/VZvx.398abdd6892766b63b59.gif",
+    "index.html": "/react_wcprod/index.html",
+    "main.535cc3c6.css.map": "/react_wcprod/static/css/main.535cc3c6.css.map",
+    "main.30b0ee8d.js.map": "/react_wcprod/static/js/main.30b0ee8d.js.map",
+    "453.75553bbc.chunk.js.map": "/react_wcprod/static/js/453.75553bbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.535cc3c6.css",
+    "static/js/main.30b0ee8d.js"
+  ]
+}
