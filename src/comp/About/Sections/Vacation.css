@@ -1,0 +1,9 @@
+tbody td {
+    border-bottom: 1px solid black;
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody td:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
