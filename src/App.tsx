@@ -20,9 +20,9 @@ const App = () => {
     }
   }, [isBorderActive]);
   useEffect(() => {
-    // Перенаправлення на /contact
+
     navigate('/');
-  }, [navigate]);
+  }, []);
   return (
     <div
       className="border-wrapper"
