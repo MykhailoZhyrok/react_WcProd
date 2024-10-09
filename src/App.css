@@ -1,5 +1,4 @@
 .border-wrapper {
-    background-color: rgb(255, 240, 222);
     height: 100vh; /* Висота для всього вікна перегляду */
     overflow: auto; /* Дозволити прокручування вмісту */
     box-sizing: border-box; /* Враховувати бордер у розмірах */

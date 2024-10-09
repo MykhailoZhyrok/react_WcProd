@@ -2,14 +2,14 @@ import React from 'react'
 import './Vacation.css'
 export default function VacationSection() {
     return (
-        <section style={{ display: 'flex', height: '90vh', alignItems: 'center' }}>
-            <div style={{ display: 'flex', padding: 40 }}>
-                <div>
+        <section style={{ display: 'flex', height: '90vh', alignItems: 'center'}}>
+            <div style={{ display: 'flex', padding: 40, flexWrap: 'wrap'}}>
+                <div style={{minWidth: 210}}>
                     <h2>
                         Ready to join the PetProd?
                     </h2>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '20px' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '20px', minWidth: 210 }}>
                     <table style={{ borderCollapse: 'collapse', textAlign: 'left' }}>
                         <thead style={{ backgroundColor: 'black', color: 'white', }}>
                             <tr>

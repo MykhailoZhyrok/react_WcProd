@@ -1,0 +1,16 @@
+/* CSS для анімації меню */
+.menu-item {
+    opacity: 0; /* Початкова непрозорість */
+    transform: translateY(-20px); /* Зміщення вниз */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Анімація для непрозорості і зміщення */
+  }
+  
+  .menu-item.show {
+    opacity: 1; /* Коли показано, встановлюємо непрозорість */
+    transform: translateY(0); /* Повертаємо на місце */
+  }
+ 
+
+@media (max-width:680px) {
+   
+}

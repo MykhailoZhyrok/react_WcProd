@@ -133,7 +133,7 @@ export default function TeamSection() {
     };
 
     return (
-        <section style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '50px 0  50px 40px' }}>
+        <section style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '50px 0  50px 40px', flexWrap: 'wrap' }}>
             <div style={{ maxWidth: 400 }}>
                 <h1 style={{ margin: 0 }}>The team</h1>
                 <p style={{ margin: 0 }}>

@@ -3,7 +3,7 @@ import React from 'react'
 export default function FooterComp() {
   return (
     <div style={{padding: 40, background: 'rgb(0, 3, 15)'}}>
-  <div style={{display: 'flex', color: 'white', alignItems: 'center', justifyContent: 'space-between' }}>
+  <div style={{display: 'flex', color: 'white', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' }}>
         <div>
             <h1 style={{fontSize: 20, margin: 0}}>
                 Get in touch 

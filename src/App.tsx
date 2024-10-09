@@ -8,9 +8,10 @@ import { useNavigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import FooterComp from './comp/FooterComp';
 import NumberPage from './comp/NumberPage';
-
+import BurgerNavbar from './comp/BurgerNavbar';
 const App = () => {
   const [isBorderActive, setIsBorderActive] = useState<boolean>(false);
+  const [burgerActive, setBurgerActive] = useState<boolean>(false);
   const navigate = useNavigate();
   useEffect(() => {
     if (isBorderActive) {
@@ -28,12 +29,13 @@ const App = () => {
       className="border-wrapper"
       style={{
         border: isBorderActive ? '25px solid rgb(255, 240, 222)' : '25px solid rgb(0, 3, 15)',
-        transition: 'border 0.5s ease-in-out',
+        backgroundColor: burgerActive ? 'rgb(0, 3, 15)' : 'rgb(255, 240, 222)',
+        transition: 'border 0.5s ease-in-out, background-color 0.5s ease-in-out',
       }}
     >
       <div
         style={{
-          opacity: isBorderActive ? 0 : 1,
+          opacity: isBorderActive || burgerActive ? 0 : 1,
           transition: 'opacity 0.5s ease-in-out',
         }}
       >
@@ -42,7 +44,8 @@ const App = () => {
           <Route path='/contact' element={<MainContact />} />
         </Routes>
       </div>
-      <Navbar setIsBorderActive={setIsBorderActive} />
+      <Navbar setIsBorderActive={setIsBorderActive} setBurgerActive={setBurgerActive} burgerActive={burgerActive} />
+
       <NumberPage />
     </div>
   );

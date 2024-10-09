@@ -9,19 +9,20 @@ export default function LikesSection() {
       display: 'flex', 
       alignItems: 'center', 
       justifyContent: 'center',
-      flexDirection: 'column' 
+      flexDirection: 'column',
+      padding: '0 20px' // Додаємо padding для відступів на мобільних
     }}>
-      <div style={{paddingRight: 80}}>
-
-      
-      <div style={{ maxWidth: 500 }}>
-        <h3 style={{margin: 0}}>What’s The PetProd like?</h3>
-      </div>
-      <div style={{ maxWidth: 700 }}>
-        <p style={{ fontSize: '2.75rem', margin: 0 }}>
-          We admit it: We’re addicted to performance marketing. All of it. We created The Prod so we could use every bit of our collective experience, every day, to win as often as possible. We love winning — don’t you?
-        </p>
-      </div>
+      <div style={{ paddingRight: '5vw' }}>
+        <div style={{ maxWidth: 500 }}>
+          <h3 style={{ margin: 0, fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>
+            What’s The PetProd like?
+          </h3>
+        </div>
+        <div style={{ maxWidth: 700 }}>
+          <p style={{ fontSize: 'clamp(1.25rem, 5vw, 2.75rem)', margin: 0 }}>
+            We admit it: We’re addicted to performance marketing. All of it. We created The Prod so we could use every bit of our collective experience, every day, to win as often as possible. We love winning — don’t you?
+          </p>
+        </div>
       </div>
     </section>
   );

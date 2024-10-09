@@ -1,0 +1,29 @@
+.mainText {
+    padding: 60px 70px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textCont {
+    max-width: 480px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.imgCont {padding-top: 20px; padding-right: 20px; max-width: 385px; }
+
+@media (max-width:680px) {
+    .mainText {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .textCont {
+        padding: 60px 70px 0 40px;
+    }
+    .imgCont {
+        max-width: 680px;
+        padding: 0;
+    }
+
+}

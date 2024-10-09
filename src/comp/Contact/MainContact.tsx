@@ -6,9 +6,9 @@ export default function MainContact() {
   return (
     <div >
         <div   style={{ maxWidth: 500, padding: '60px 20px 20px 40px'}} >
-          <h1 style={{ margin: 0, fontSize: '5.75rem' }}>Say hi.</h1>
+          <h1 style={{ margin: 0, fontSize: 'clamp(2rem, 7vw, 5.75rem)' }}>Say hi.</h1>
         </div>
-        <div style={{paddingLeft: 40}}>
+        <div style={{paddingLeft: 40, paddingRight: 40}}>
           <div>
           <h4>
             Reach us

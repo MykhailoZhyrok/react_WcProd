@@ -1,4 +1,5 @@
 .link {
     color:black;
-    font-size:  40px;
+    font-size:  clamp(2rem, 2vw, 2.75rem);
+
 }

@@ -117,10 +117,10 @@ export default function MeetSection() {
   };
 
   return (
-    <section style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingLeft: 40, paddingBottom: 40 }}>
-      <div style={{ flex: 1, paddingRight: 40 }}>
+    <section style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', paddingLeft: 40, paddingBottom: 40, flexWrap: 'wrap' }}>
+      <div style={{ flex: 1, paddingRight: 40,  }}>
         <h2 style={{ backgroundColor: 'black', color: 'white', fontSize: 24, padding: '10px 20px' }}>Meet The Prod</h2>
-        <div>
+        <div style={{minWidth: 210}}>
           <p style={{ fontSize: 16, lineHeight: '1.5' }}>
             The Prod are energetic, experienced, and not afraid to give you a straight answer. We move fast, but we never rush... and we stay focused on results above all else – something you’ll see proof of from the moment you start working with us.
           </p>
@@ -140,7 +140,7 @@ export default function MeetSection() {
         </div>
       </div>
       <div
-        style={{ overflow: 'hidden', maxWidth: 600, maxHeight: 500, cursor: 'grab' }}
+        style={{ overflow: 'hidden', maxWidth: 600, maxHeight: 500, minWidth: 240, cursor: 'grab' }}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}

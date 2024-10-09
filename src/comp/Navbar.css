@@ -1,5 +1,70 @@
+.navbarCont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    mix-blend-mode: difference; 
+    color: white;
+}
+
 .navButton {
     position: relative;
     font-size: 16px;
     cursor: pointer;
+}
+
+.burgerCont {
+    display: flex;
+    border: 1px solid snow;
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  }
+.xCont {
+    position: absolute;
+    width: 45px;
+    height: 24px;
+}
+  .burgerCont.open .xCont .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 5px);
+  }
+  
+  .burgerCont.open .xCont .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burgerCont.open .xCont .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(0px, 2px);
+  }
+
+.navButton {
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    width: 100%;
+}
+
+.mobMenu{
+    display: none;
+    flex-direction: column;
+}
+@media (max-width:680px) {
+    .navButton {
+        display: none;
+    }
+    .mobMenu {
+        display: flex;
+    }
+    
 }
